@@ -2,6 +2,7 @@ import { Snippet } from "../../domain/entities/snippet";
 import { NotFoundError } from "../../domain/errors/not-found.error";
 import { ISnippetRepository } from "../../domain/repositories/i.snippet.repository";
 import { InMemorySnippetRepository } from "../../domain/repositories/in-memory.snippet.repository.stub";
+import { GetSnippetByIdUseCase } from "./get.snippet.use-case";
 
 describe("Integration tests for GetSnippetByIdUseCase", () => {
     let snippetRepository: ISnippetRepository;
