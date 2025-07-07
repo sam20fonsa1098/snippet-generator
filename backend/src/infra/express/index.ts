@@ -1,15 +1,12 @@
 import { config } from "dotenv";
 import { app } from "./app";
+import { connectToDatabase } from "../databases/mongo/connection";
 
 const runServer = async () => {
   try {
     config();
-    const { PORT } = process.env;
-
-    if (!PORT) {
-      throw new Error("PORT environment variable is not defined");
-    }
-
+    const { MONGO_URI, PORT } = process.env;
+    await connectToDatabase(MONGO_URI);
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
