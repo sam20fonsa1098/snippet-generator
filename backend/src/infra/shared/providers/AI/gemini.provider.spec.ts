@@ -1,4 +1,5 @@
 import { config } from 'dotenv';
+import { GeminiProvider } from './gemini.provider';
 
 describe("Gemini Provider tests", () => {
     beforeAll(() => {
