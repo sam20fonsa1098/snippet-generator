@@ -50,7 +50,7 @@ The backend uses environment variables defined in the `.env` file:
 ```
 PORT=3000
 GEMINI_API_KEY=your_google_gemini_api_key
-MONGODB_URI=mongodb://localhost:27017/mydatabase
+MONGO_URI=mongodb://localhost:27017/mydatabase
 MONGO_URI_TEST=mongodb://localhost:27017/testdatabase
 ```
 
