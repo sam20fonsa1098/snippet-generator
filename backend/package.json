@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "start": "node dist/infra/express/index.js",
     "dev": "nodemon --watch src --ext ts,json --exec ts-node src/infra/express/index.ts"
   },
