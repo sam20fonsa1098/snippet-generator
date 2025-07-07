@@ -2,6 +2,7 @@ import { config } from 'dotenv';
 import { Snippet } from '../../../../domain/entities/snippet';
 import { connectToDatabase, deleteAllCollections, disconnectFromDatabase } from '../connection';
 import { NotFoundError } from '../../../../domain/errors/not-found.error';
+import { MongoSnippetRepository } from './mongo.snippet.repository';
 
 describe("MongoSnippetRepository", () => {
     let repository: MongoSnippetRepository;
