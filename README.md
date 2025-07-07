@@ -98,15 +98,15 @@ You can run backend tests with:
 
 ```bash
 cd backend
-npm install (if you haven\'t already installed the dependencies locally)
+npm install (if you haven't already installed the dependencies locally)
 npm run test
 ```
 
-Frontend tests (if using Vitest):
+Frontend tests:
 
 ```bash
 cd frontend
-npm install (if you haven\'t already installed the dependencies locally)
+npm install (if you haven't already installed the dependencies locally)
 npm run test
 ```
 
