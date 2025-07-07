@@ -32,6 +32,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <nav className="p-4 bg-gray-200">
+          <a href="/snippets" className="text-blue-600 font-semibold hover:underline">
+            Snippets
+          </a>
+        </nav>
         {children}
         <ScrollRestoration />
         <Scripts />
