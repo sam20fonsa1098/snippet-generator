@@ -1,6 +1,7 @@
 import { Snippet } from "../../domain/entities/snippet";
 import { ISnippetRepository } from "../../domain/repositories/i.snippet.repository";
 import { InMemorySnippetRepository } from "../../domain/repositories/in-memory.snippet.repository.stub";
+import { ListAllSnippetsUseCase } from "./list-all.snippets.use-case";
 
 describe("ListAllSnippetsUseCase Integration Tests", () => {
     let snippetRepository: ISnippetRepository;
